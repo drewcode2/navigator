@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+</header>
+<body>
+<style type="text/css">
+a { text-decoration : none; color : #000; }
+</style>
+<!-- Ambiance Theme -->
+<link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css" />
+
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/buttons.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/dialogs.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/page.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/pagestacks.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tab.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
+
+<center><h1>Navigator</h1></center>
+<footer data-role="footer" class="revealed" id="footerID">
+  <nav>
+    <ul>
+      <li>
+            <h1>
+      <!-- Date Script -->
+<script>
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+</script>
+</h1>
+      </li>
+    </nav>
+  </div>
+</footer>
+<!-- Taskbar And Tab Script -->
+<script>
+var popBase = document.getElementByID("popoverBase");
+ var popover = UI.popover(popBase, "popover");
+ var toolbar = UI.footer("footerID");
+ UI.button('#').click(function () {
+   UI.pagestack.push("main");
+ });
+  UI.tabs.METHOD();
+
+ </script>
+ <body>
+    <div data-role="mainview">
+      <header data-role="header">
+        <ul data-role="tabs">
+          <li data-role="tabitem" data-page="main">
+            Main
+          </li>
+          <li data-role="tabitem" data-page="page2">
+            Two
+          </li>
+        </ul>
+      </header>
+      <div data-role="content">
+     <div data-role="tab" id="main">
+     <!-- Links -->
+<p> </p>
+<ls>
+<ul><h1>Popular Search Engines</h1></ul>
+    <ul><a href="http://www.google.com">Google</a></ul><ul><a href="http://www.duckduckgo.com">DuckDuckGo!</a></ul>
+    <ul><a href="http://www.yahoo.com">Yahoo!</a></ul><ul><a href="http://www.startpage.com">Startpage</a></ul>
+    <ul><a href="http://www.bing.com">Bing</a></ul><ul><a href="http://start.ubuntu.com/">Ubuntu Startpage</a></ul>
+    <ul><h1>ISP Search Engines</h1></ul>
+    <ul><a href="http://search.charter.net">Charter</a></ul>
+    <ul><h1>Shopping</h1></ul>
+    <ul><a href="http://www.amazon.com">Amazon</a></ul>
+    <ul><a href="http://www.llbean.com">L.L.Bean</a></ul>
+    <ul><a href="http://www.ebay.com">eBay</a></ul>
+    <ul><a href="http://www.jcpenney.com">JCPenney</a></ul>
+    <ul><a href="http://www.orvis.com">Orvis</a></ul>
+
+
+    <ul><h1>Banking</h1></ul>
+    <p>Nothing Yet!</p>
+    <ul><h1>Information</h1></ul>
+    <p>Nothing Yet!</p>
+
+
+<center><h1>MORE COMING SOON!</h1></center>
+</ls>
+</div>
+     <div data-role="tab" id="page2">
+          Welcome To Navigator! Navigator Is A Place Where You Can Choose A Website To Go On And Browse The Web. You Can Also Get Statics About Things And Many More Useful Tools.
+     </div>
+      </div>
+    </div>
+  </body>
